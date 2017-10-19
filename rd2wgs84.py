@@ -1,3 +1,5 @@
+#! /usr/bin/env python
+
 """
 2010.08.31, blue chips - Henkjan Faber
 
@@ -70,7 +72,8 @@ def convert(x, y):
 
 if __name__ == "__main__":
     try:
-        convert(sys.argv[1], sys.argv[2])
+        coordinates = convert(sys.argv[1], sys.argv[2])
+        print coordinates[0] ,coordinates[1]
     except:
       print "Please supply an X and Y value"
 
